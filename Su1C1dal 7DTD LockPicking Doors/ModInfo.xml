@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Lockpicking Doors" />
+		<Description value="Turns doors that have been reinforced into lockpickable doors. Does not include vault doors or hatches. A18.1B8" />
+		<Author value="Su1C1daL" />
+		<Version value="1" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>
