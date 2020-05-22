@@ -1,5 +1,5 @@
 <configs>
-<!--- The speed can be changed to whatever you want it to be by changing the "1.2" to an "x.x" value --->
+<!-- The speed can be changed to whatever you want it to be by changing the "1.2" to an "x.x" value -->
 
 <set xpath="/materials/material[@id='Mwater']/@movement_factor">1.2</set>
 
