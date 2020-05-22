@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="Su1C1dal 7DTD Walk Faster" />
-		<Description value="Changes the movement factor for certain materials (concrete,gravel,asphalt) to walk faster on them." />
+		<Name value="Su1C1dal 7DTD Walk Slower" />
+		<Description value="Changes the movement factor for certain materials (snow,sand,desert) to walk slower on them." />
 		<Author value="Su1C1daL" />
 		<Version value="1" />
 		<Website value="https://github.com/Su1C1daL/Su1C1dal-7DTD-Mods" />
