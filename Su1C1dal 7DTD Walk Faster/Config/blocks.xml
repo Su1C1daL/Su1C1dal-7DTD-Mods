@@ -1,0 +1,18 @@
+<configs>
+
+<!--- To change the speeds to your liking just change the "value". less than 1 is slower, more than 1 is faster. --->
+
+<append xpath="/blocks/block[@name='terrConcrete']">
+		<property name="MovementFactor" value="1.25"/>
+</append>
+
+<append xpath="/blocks/block[@name='terrGravel']">
+		<property name="MovementFactor" value="1.15"/>
+</append>
+
+<append xpath="/blocks/block[@name='terrAsphalt']">
+		<property name="MovementFactor" value="1.25"/>
+</append>
+
+</configs>
+
