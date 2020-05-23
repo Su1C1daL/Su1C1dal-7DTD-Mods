@@ -1,0 +1,34 @@
+<configs>
+
+<!-- To change the speeds to your liking just change the "value". less than 1 is slower, more than 1 is faster. -->
+
+<append xpath="/blocks/block[@name='terrFertileGrass']">
+		<property name="MovementFactor" value="0.8"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeSnowyGrassDiagonal']">
+		<property name="MovementFactor" value="0.8"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeBrownGrassDiagonal']">
+		<property name="MovementFactor" value="0.8"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeTallGrassDiagonal']">
+		<property name="MovementFactor" value="0.8"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeForestGrassDiagonal']">
+		<property name="MovementFactor" value="0.8"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeGreenBrownGrassDiagonal']">
+		<property name="MovementFactor" value="0.8"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedtreeGrassSeed1']">
+		<property name="MovementFactor" value="0.8"/>
+</append>
+
+
+</configs>
