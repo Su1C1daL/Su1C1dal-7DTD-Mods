@@ -4,7 +4,7 @@
 		<Name value="Su1C1dal 7DTD Walk Faster" />
 		<Description value="Changes the movement factor for certain materials (concrete,gravel,asphalt) to walk faster on them." />
 		<Author value="Su1C1daL" />
-		<Version value="1" />
+		<Version value="1" compat="A18.4"   />
 		<Website value="https://github.com/Su1C1daL/Su1C1dal-7DTD-Mods" />
 	</ModInfo>
 </xml>
