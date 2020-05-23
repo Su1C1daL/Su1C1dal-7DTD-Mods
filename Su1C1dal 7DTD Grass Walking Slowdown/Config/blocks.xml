@@ -30,5 +30,23 @@
 		<property name="MovementFactor" value="0.7"/>
 </append>
 
+<append xpath="/blocks/block[@name='plantedSnowberry1']">
+		<property name="MovementFactor" value="0.7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedSnowberry2']">
+		<property name="MovementFactor" value="0.7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedSnowberry3Harvest']">
+		<property name="MovementFactor" value="0.7"/>
+</append>
+
+<append xpath="/blocks/block[@name='plantedSnowberry3HarvestPlayer']">
+		<property name="MovementFactor" value="0.7"/>
+</append>
+
+
+
 
 </configs>
