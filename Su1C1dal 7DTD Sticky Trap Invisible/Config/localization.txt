@@ -1,0 +1,3 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+sticky_trap_invisible_Su1C1dal,blocks,Resources,,,"Sticky Trap Invisible"
+sticky_trap_invisible_Su1C1dalDesc,blocks,Resources,,,"A trap that blends into the surrounding ground, causing the enemy to become stuck. Drinking oil will free you if the mod was added."

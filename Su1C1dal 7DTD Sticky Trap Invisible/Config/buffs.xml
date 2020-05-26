@@ -1,0 +1,43 @@
+<configs> <!-- A lot of coding trial and error went into this from rewtgr -->
+			<!-- Thank you rewtgr for making this possible -->
+
+	<append xpath="/buffs">
+
+		<buff name="nojumpingtrigger1" hidden="false">
+			<stack_type value="ignore"/>
+			<duration value="1"/>
+			<update_rate value=".1"/>
+			<effect_group>
+				<requirements>
+					<requirement name="NotHasBuff" buff="traprelease"/>
+					<requirement name="NotHasBuff" buff="traprelease2"/>
+					<requirement name="NotHasBuff" buff="nojumping1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="nojumping1"/>
+			</effect_group>
+		</buff>
+
+		<buff name="nojumping1" name_key="So Sticky!" description_key="You have been caught in a sticky trap! Good Luck!" icon="trap1-icon">
+			<stack_type value="ignore"/>
+			<duration value="0"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<requirements>
+					<requirement name="NotHasBuff" buff="traprelease"/>
+					<requirement name="NotHasBuff" buff="traprelease2"/>
+					<requirement name="NotHasBuff" buff="nojumpingtrigger1"/>
+				</requirements>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="nojumping1"/>
+			</effect_group>
+
+			<effect_group>
+				<passive_effect name="JumpStrength" operation="base_set" value=".01"/>
+				<passive_effect name="WalkSpeed" operation="base_set" value="0.1"/>
+				<passive_effect name="RunSpeed" operation="base_set" value="0.1"/>
+
+			</effect_group>
+		</buff>
+
+		
+	</append>	
+</configs>

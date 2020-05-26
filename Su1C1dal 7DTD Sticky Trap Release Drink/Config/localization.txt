@@ -1,0 +1,4 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+resourceOilDesc,items,Item,,,Oil is a key ingredient for crafting traps and various mods-can also drink it to be released from Sticky Traps for 5 seconds. Does not prevent damage!
+sticky_trap_release_Su1C1dal,items,Item,,,"Sticky Trap Release"
+sticky_trap_release_Su1C1dalDesc,items,Item,,,A drinkable solution that will release you from Sticky Traps for 15 seconds. Does not prevent damage!

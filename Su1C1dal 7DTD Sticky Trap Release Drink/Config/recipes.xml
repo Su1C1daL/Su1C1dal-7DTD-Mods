@@ -1,0 +1,14 @@
+<recipes>
+
+<append xpath="/recipes">
+
+<recipe name="sticky_trap_release_Su1C1dal" count="1" craft_area="campfire" craft_tool="toolBeaker">
+	<ingredient name="drinkJarRiverWater" count="1"/>
+	<ingredient name="resourceCropSnowberryPlant" count="5"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceAnimalFat" count="1"/>
+</recipe>
+
+
+</append>
+</recipes>

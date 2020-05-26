@@ -1,0 +1,11 @@
+<recipes>
+
+<append xpath="/recipes">
+
+<recipe name="sticky_trap_invisible_Su1C1dal" count="1" craft_area="cementMixer" tags="cementMixerCrafting">
+	<ingredient name="resourceClayLump" count="50"/>
+	<ingredient name="resourceGlue" count="1"/>
+</recipe>
+
+</append>
+</recipes>

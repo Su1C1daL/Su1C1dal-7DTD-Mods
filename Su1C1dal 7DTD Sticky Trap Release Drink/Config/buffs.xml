@@ -1,0 +1,50 @@
+		<configs> <!-- A lot of coding trial and error went into this from rewtgr -->
+			<!-- Thank you rewtgr for making this possible -->
+		
+		
+		
+		<append xpath="/buffs">
+		
+		<buff name="traprelease" name_key="I'm Free!" description_key="You are all lubed up!" icon="traprelease-icon">
+			<stack_type value="ignore"/>
+			<duration value="5"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping4"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping3"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping2"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping1"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.5" effect_name="Drunk"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Drunk"/>
+				
+			</effect_group>
+
+		</buff>
+		
+		
+		
+		<buff name="traprelease2" name_key="I'm Free!" description_key="You are all lubed up!" icon="traprelease-icon">
+			<stack_type value="ignore"/>
+			<duration value="15"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping4"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping3"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping2"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping1"/>
+				
+				
+			</effect_group>
+
+		</buff>
+		
+		
+		</append>
+		</configs>

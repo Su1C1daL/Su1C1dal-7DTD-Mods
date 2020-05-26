@@ -1,0 +1,35 @@
+<configs>
+
+<append xpath="/blocks">
+
+<block name="sticky_trap_spike_invisible_Su1C1dal">
+	<property name="Class" value="TrunkTip"/>
+	<property name="BlockTag" value="Spike"/>
+	<property name="Material" value="Mdirt"/>
+	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
+	<property name="Damage" value="3"/>
+	<property name="DamageType" value="BarbedWire"/>
+	<property name="Damage_received" value="0"/>
+	<property name="Shape" value="Terrain"/>
+	<property name="Mesh" value="terrain"/>
+	<property name="BuffsWhenWalkedOn" value="nojumpingtrigger2"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="SellableToTrader" value="false"/>
+	<property name="LightOpacity" value="0"/>
+	<property name="Model" value="trap_barbed_fence_shape"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="IsTerrainDecoration" value="false"/>
+	<property name="Collide" value="melee,rocket"/>
+	<property name="Texture" value="403"/>
+	<!--<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>-->
+	<drop event="Harvest" name="resourceClayLump" count="22" tag="allHarvest"/>
+	<drop event="Destroy" count="0"/>
+	<property name="CanPlayersSpawnOn" value="false"/>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="FilterTags" value="fdecor,ftraps"/>
+	<property name="SortOrder1" value="70g0"/>
+</block>
+
+
+</append>
+</configs>
