@@ -50,6 +50,14 @@
 		<property name="MovementFactor" value="0.7"/>
 </append>
 
+<append xpath="/blocks/block[@name='treeDeadPineLeaf']">
+		<property name="MovementFactor" value="0.7"/>
+</append>
+
+<append xpath="/blocks/block[@name='treeSnowyDeadBush']">
+		<property name="MovementFactor" value="0.7"/>
+</append>
+
 
 
 
