@@ -32,10 +32,10 @@
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="nojumping1"/>
 			</effect_group>
 
-			<effect_group>
-				<passive_effect name="JumpStrength" operation="base_set" value="0"/>
-				<passive_effect name="WalkSpeed" operation="base_set" value=".1"/>
-				<passive_effect name="RunSpeed" operation="base_set" value=".05"/>
+			<effect_group>																								<!-- Changes below are only when you are on the trap block -->
+				<passive_effect name="JumpStrength" operation="base_set" value="0"/> <!-- Anytihing above zero will allow jumping while on trap, however will take fiddling if you adjust as "1" is not vanilla -->
+				<passive_effect name="WalkSpeed" operation="base_set" value=".1"/> <!-- Changes the speed you walk with "1" being vanilla. Done as a percentage so .5 is 50% of vanilla and "2" is 200% -->
+				<passive_effect name="RunSpeed" operation="base_set" value=".05"/> <!-- Changes the speed you run with "1" being vanilla. Done as a percentage so .5 is 50% of vanilla and "2" is 200% -->
 				
 				
 				
