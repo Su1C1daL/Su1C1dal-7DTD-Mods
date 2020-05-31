@@ -1,25 +1,52 @@
 		<configs> <!-- A lot of coding trial and error went into this from rewtgr -->
-			<!-- Thank you rewtgr for making this possible -->
+			<!-- Thank you rewtgr for making this possible! -->
 		
 		
 		
 		<append xpath="/buffs">
-		
+		<!-- Buff that is applied to the item "resourceOil" which stops/offsets the buff that is applied from the sticky trap -->
 		<buff name="traprelease" name_key="I'm Free!" description_key="You are all lubed up!" icon="traprelease-icon">
 			<stack_type value="ignore"/>
-			<duration value="5"/>
+			<duration value="4"/>
 			<update_rate value="1"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping4"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" target="self" buff="traprelease1"/>			
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping4"/>				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping3"/>				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping2"/>	<!-- This is the sticky spike trap debuff -->			
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping1"/> <!-- This is the sticky trap debuff -->
+												
+				<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="PlayerLandThump"/> <!-- Audio tells you buff is done -->
 				
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping3"/>
+				<passive_effect name="JumpStrength" operation="base_set" value="0"/>
+				<passive_effect name="WalkSpeed" operation="base_set" value=".3"/>
+				<passive_effect name="RunSpeed" operation="base_set" value=".15"/>
 				
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping2"/>
 				
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping1"/>
 				
-				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.5" effect_name="Drunk"/>
+			</effect_group>
+
+		</buff>
+		
+		
+		<!-- Sickness effects triggered from "traprelease" which extends from drinking oil to release from sticky traps -->
+		<buff name="traprelease1" name_key="I Don't Feel Well..." description_key="Should I really be drinking this?">
+			<stack_type value="ignore"/>
+			<duration value="6"/> <!-- Changes how long the effects last -->
+			<update_rate value="1"/>
+			<effect_group>
+				
+				
+				<triggered_effect trigger="onSelfBuffStart" action="PlaySound" sound="player#vomit"/>
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.8" effect_name="Hot"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.9" effect_name="Drunk"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.9" effect_name="Blur"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Hot"/>
 				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Drunk"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Blur"/>
+											
+				<passive_effect name="StaminaChangeOT" operation="perc_subtract" value=".4,2"/>
 				
 			</effect_group>
 
@@ -27,18 +54,53 @@
 		
 		
 		
+		
+		
+		<!-- Buff that is applied to the item "sticky_release_2_Su1C1dal" which stops/offsets the buff that is applied from the sticky trap -->
 		<buff name="traprelease2" name_key="I'm Free!" description_key="You are all lubed up!" icon="traprelease-icon">
 			<stack_type value="ignore"/>
-			<duration value="15"/>
+			<duration value="4"/>
 			<update_rate value="1"/>
 			<effect_group>
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping4"/>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping4"/>				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping3"/>				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping2"/>	<!-- This is the sticky spike trap debuff -->			
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping1"/> <!-- This is the sticky trap debuff -->
 				
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping3"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.8" effect_name="Hot"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Hot"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="PlayerLandThump"/> <!-- Audio tells you buff is done -->
 				
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping2"/>
 				
-				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping1"/>
+				<passive_effect name="WalkSpeed" operation="base_set" value=".4"/>
+				<passive_effect name="RunSpeed" operation="base_set" value=".25"/>
+				
+				
+			</effect_group>
+
+		</buff>
+		
+		
+		
+		<!-- Buff that is applied to the item "sticky_release_3_Su1C1dal" which stops/offsets the buff that is applied from the sticky trap -->
+		<buff name="traprelease3" name_key="I'm Free!" description_key="You are all lubed up!" icon="traprelease-icon">
+			<stack_type value="ignore"/>
+			<duration value="3"/>
+			<update_rate value="1"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping4"/>				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping3"/>				
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping2"/>	<!-- This is the sticky spike trap debuff -->			
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="nojumping1"/> <!-- This is the sticky trap debuff -->
+				
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.8" effect_name="Hot"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Hot"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="PlaySound" sound="PlayerLandThump"/> <!-- Audio tells you buff is done -->
+				
+				<passive_effect name="WalkSpeed" operation="base_set" value=".6"/>
+				<passive_effect name="RunSpeed" operation="base_set" value=".45"/>
+				
+				
 				
 				
 			</effect_group>

@@ -10,14 +10,14 @@
 	<property name="BlockTag" value="Spike"/>
 	<property name="Material" value="Mdirt"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
-	<property name="Damage" value="0"/>
+	<property name="Damage" value="0"/> <!-- Amount of damage per second done to PLAYER while standing on block, should be 0 or will be the same as the other trap-->
 	<property name="DamageType" value="BarbedWire"/>
-	<property name="Damage_received" value="0"/>
+	<property name="Damage_received" value="0"/> <!-- Amount of damage done to the BLOCK from standing on it -->
 	<property name="Shape" value="Terrain"/>
 	<property name="Mesh" value="terrain"/>
-	<property name="BuffsWhenWalkedOn" value="nojumpingtrigger1"/>
-	<property name="EconomicValue" value="0"/>
-	<property name="SellableToTrader" value="false"/>
+	<property name="BuffsWhenWalkedOn" value="nojumpingtrigger1"/> <!-- Buff added to get the needed affect -->
+	<property name="EconomicValue" value="0"/> <!-- Gives value to the block if sellable -->
+	<property name="SellableToTrader" value="false"/> <!-- Allows the block to be sold -->
 	<property name="LightOpacity" value="0"/>
 	<property name="Model" value="trap_barbed_fence_shape"/>
 	<property name="Place" value="TowardsPlacer"/>

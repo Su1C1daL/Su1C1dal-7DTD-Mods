@@ -11,9 +11,10 @@
 				<requirements>
 					<requirement name="NotHasBuff" buff="traprelease"/>
 					<requirement name="NotHasBuff" buff="traprelease2"/>
-					<requirement name="NotHasBuff" buff="nojumping2"/>
+					<requirement name="NotHasBuff" buff="traprelease3"/>
+					<requirement name="NotHasBuff" buff="nojumping2"/>					
 				</requirements>
-				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="nojumping2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AddBuff" target="self" buff="nojumping2" target_tags="zombie,animal,player"/>
 			</effect_group>
 		</buff>
 
@@ -25,15 +26,16 @@
 				<requirements>
 					<requirement name="NotHasBuff" buff="traprelease"/>
 					<requirement name="NotHasBuff" buff="traprelease2"/>
+					<requirement name="NotHasBuff" buff="traprelease3"/>
 					<requirement name="NotHasBuff" buff="nojumpingtrigger2"/>
 				</requirements>
 				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="nojumping2"/>
 			</effect_group>
 
 			<effect_group>
-				<passive_effect name="JumpStrength" operation="base_set" value=".01"/>
-				<passive_effect name="WalkSpeed" operation="base_set" value="0.1"/>
-				<passive_effect name="RunSpeed" operation="base_set" value="0.1"/>
+				<passive_effect name="JumpStrength" operation="base_set" value="0"/>
+				<passive_effect name="WalkSpeed" operation="base_set" value=".1"/>
+				<passive_effect name="RunSpeed" operation="base_set" value=".05"/>
 
 			</effect_group>
 		</buff>

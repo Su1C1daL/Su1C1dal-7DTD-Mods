@@ -1,26 +1,26 @@
 <configs>
 
 	<append xpath="/items/item[@name='resourceOil']">
-		<property class="Action0">
+		<property class="Action0">  <!-- Give the item the ability to be used with left mouse button -->
 			<property name="Class" value="Eat"/>
-			<property name="Delay" value="5"/>
+			<property name="Delay" value="6"/>
 			<property name="Use_time" value="..."/>
 			<property name="Sound_start" value="player_drinking"/>
 		</property>
 		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="traprelease"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="traprelease"/> <!-- Adds buff to release you from the trap after drinking -->
 
 		</effect_group>
 	</append>
 
-
+	<!-- Changes the "resourceOil" so that it shows a jar in hand when holding it -->
 	<set xpath="/items/item[@name='resourceOil']/property[@name='HoldType']/@value">3</set>
 	<set xpath="/items/item[@name='resourceOil']/property[@name='Meshfile']/@value">#Other/Items?Food/bottled_waterPrefab.prefab</set>
 
 
 <append xpath="/items">
 
-	<item name="sticky_trap_release_Su1C1dal">
+	<item name="sticky_release_2_Su1C1dal">
 		<property name="HoldType" value="3"/>
 		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
 		<property name="DropMeshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
@@ -28,34 +28,60 @@
 		<property name="Stacknumber" value="5"/>
 		<!-- STK resource -->
 		<property name="Weight" value="10"/>
-		<property name="EconomicValue" value="0"/>
+		<property name="EconomicValue" value="0"/> <!-- Gives value to the block if sellable -->
 		<property name="EconomicBundleSize" value="1"/>
-		<property name="SellableToTrader" value="false"/>
+		<property name="SellableToTrader" value="false"/> <!-- Allows the block to be sold -->
 		<property name="CraftingIngredientTime" value="10"/>
 		<property class="Action0">
 			<property name="Class" value="Eat"/>
-			<property name="Delay" value="15"/>
+			<property name="Delay" value="6"/> <!-- Amount of time in seconds before you can drink it again -->
 			<property name="Sound_start" value="player_drinking"/>
-			<property name="Create_item" value="drinkJarEmpty"/>
+			<property name="Create_item" value="drinkJarEmpty"/>  <!-- Gives you back your jar after drinking -->
 		</property>
 		<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
 
 		<effect_group tiered="false">
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="traprelease2"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="traprelease2"/> <!-- Adds buff to release you from the trap after drinking -->
 
 		</effect_group>
 
 
 	</item>
 
-
 </append>
 
 
+<append xpath="/items">
 
 
+	<item name="sticky_release_3_Su1C1dal">
+		<property name="HoldType" value="3"/>
+		<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
+		<property name="Material" value="Mglass"/>
+		<property name="Stacknumber" value="5"/>
+		<!-- STK resource -->
+		<property name="Weight" value="10"/>
+		<property name="EconomicValue" value="0"/> <!-- Gives value to the block if sellable -->
+		<property name="EconomicBundleSize" value="1"/>
+		<property name="SellableToTrader" value="false"/> <!-- Allows the block to be sold -->
+		<property name="CraftingIngredientTime" value="10"/>
+		<property class="Action0">
+			<property name="Class" value="Eat"/>
+			<property name="Delay" value="5"/> <!-- Amount of time in seconds before you can drink it again -->
+			<property name="Sound_start" value="player_drinking"/>
+			<property name="Create_item" value="drinkJarEmpty"/> <!-- Gives you back your jar after drinking -->
+		</property>
+		<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
+
+		<effect_group tiered="false">
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="traprelease3"/> <!-- Adds buff to release you from the trap after drinking -->
+
+		</effect_group>
 
 
+	</item>
 
+</append>
 
 </configs>

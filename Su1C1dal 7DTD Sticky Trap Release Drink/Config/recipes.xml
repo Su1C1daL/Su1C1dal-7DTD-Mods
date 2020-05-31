@@ -2,12 +2,27 @@
 
 <append xpath="/recipes">
 
-<recipe name="sticky_trap_release_Su1C1dal" count="1" craft_area="campfire" craft_tool="toolBeaker">
+<recipe name="sticky_release_2_Su1C1dal" count="1" craft_area="campfire" craft_tool="toolBeaker">
 	<ingredient name="drinkJarRiverWater" count="1"/>
-	<ingredient name="resourceCropSnowberryPlant" count="5"/>
+	<ingredient name="foodCropBlueberries" count="5"/>
 	<ingredient name="resourceOil" count="1"/>
-	<ingredient name="resourceAnimalFat" count="1"/>
+	<ingredient name="resourceAnimalFat" count="2"/>
 </recipe>
+
+<recipe name="sticky_release_3_Su1C1dal" count="1" craft_area="chemistryStation">
+	<ingredient name="drinkJarRiverWater" count="1"/>
+	<ingredient name="foodCropBlueberries" count="5"/>
+	<ingredient name="resourceOil" count="1"/>
+	<ingredient name="resourceAnimalFat" count="2"/>
+	<ingredient name="resourceCropAloeLeaf" count="5"/>
+</recipe>
+
+<recipe name="sticky_release_3_Su1C1dal" count="1" craft_area="chemistryStation">
+	<ingredient name="sticky_release_2_Su1C1dal" count="1"/>
+	<ingredient name="resourceCropAloeLeaf" count="5"/>
+</recipe>
+
+
 
 
 </append>
