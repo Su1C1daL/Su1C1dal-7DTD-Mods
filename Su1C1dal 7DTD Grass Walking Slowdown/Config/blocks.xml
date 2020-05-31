@@ -46,6 +46,11 @@
 		<property name="MovementFactor" value="0.7"/>
 </append>
 
+<append xpath="/blocks/block[@name='treeDesertShrub']">
+		<property name="MovementFactor" value="0.7"/>
+</append>
+
+
 
 
 
